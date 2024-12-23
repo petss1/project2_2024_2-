@@ -1,0 +1,95 @@
+@use "../abstracts/variables";
+
+.target {
+  margin-left: variables.$general-margin;
+  margin-right: variables.$general-margin;
+
+  .target__title {
+    font-family: variables.$header-font;
+    color: variables.$medium-font;
+    font-size: 3vw;
+    width: 75%;
+    margin-top: 5%;
+  }
+
+  .cards {
+    display: grid;
+    gap: 3%;
+    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    grid-template-rows: 1fr;
+    margin-top: 5%;
+
+    .cards__wrapper .cards__item {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .cards__text .big-subtitle {
+      font-family: variables.$header-font;
+      color: variables.$dark-font;
+      font-size: 1.8vw;
+      width: 86%;
+      margin-top: 4%;
+    }
+
+    .cards__text .small-subtitle {
+      font-family: variables.$header-font;
+      color: variables.$dark-font;
+      font-size: 1.3vw; 
+      width: 70%;
+    }
+  }
+
+  .target__text {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: variables.$header-font;
+    color: variables.$dark-font;
+    font-size: 1.7vw; 
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .target .target__title {
+    font-size: 5vw;
+    margin-top: 7%;
+  }
+
+  .target .cards {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+
+    .cards__wrapper .cards__text .big-subtitle {
+      font-size: 5.5vw;
+      width: 76%;
+    }
+
+    .cards__wrapper .cards__text .small-subtitle {
+      font-size: 4vw;
+    }
+  }
+
+  .target .target__text {
+    padding-top: 4%;
+    font-size: 3.8vw;
+  }
+}
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

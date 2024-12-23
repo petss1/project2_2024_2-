@@ -1,0 +1,111 @@
+@use "../abstracts/variables";
+
+.training-container {
+    background: url(../img/header-footer/background.png), variables.$background-grey;
+}
+
+.training-container__text {
+    color: variables.$medium-font; 
+    padding-bottom: 3.7vw; 
+    padding-top: 4vw;
+    font-size: 2.9em;
+}
+    .training-container__video {
+        max-width: 60vw;
+    }
+
+    .training-container__cover-button {
+        padding-bottom: 12vw;
+        margin-top: 5.5vw; 
+    }
+        .training-container__button {
+            background-color: variables.$medium-font; 
+            color: white; 
+            border: none; 
+            padding: 1vw 4.2vw; 
+            font-size: 1.3em; 
+        }
+    
+        .training-container__button:hover {
+            background-color: variables.$medium-font;
+            color: white; 
+            transform: variables.$button-transform;
+        }
+
+    .training-container__leaf-up {
+        width: 14vw; 
+        bottom: 17vw;
+    }
+        .training-container__leaf-down {
+            width: 15vw; 
+            bottom: -2vw; 
+            padding-bottom: 5vw;
+        }
+
+    @media screen and (max-width: 991px) {
+        .training-container__button {
+            width: 60%;
+        }  
+    }    
+
+    @media screen and (max-width: 900px) {
+    .training-container__text {
+        font-size: 35px;
+    }
+    .training-container__button {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .training-container__text {
+        font-size: 28px;
+    }
+    .training-container__button {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 434px) and (max-width: 550px) {
+    .training-container__text {
+        font-size: 22px;
+    }
+    .training-container__button {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 340px) {
+    .training-container__text {
+        font-size: 24px;
+    }
+    .training-container__button {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .training-container__text {
+        font-size: 75px;
+    }
+    .training-container__button {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 3000px) {
+    .training-container__text {
+        font-size: 90px;
+    }
+    .training-container__button {
+        font-size: 60px;
+    }
+}
+
+@media screen and (min-width: 4500px) {
+    .training-container__text {
+        font-size: 110px;
+    }
+    .training-container__button {
+        font-size: 80px;
+    }
+}

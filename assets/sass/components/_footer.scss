@@ -1,0 +1,49 @@
+@use "../abstracts/variables";
+
+.footer {
+  display: flex;
+  background: url(../img/header-footer/background.png), variables.$background-grey;
+  justify-content: center;
+
+  .footer__list {
+    display: inline-flex;
+    list-style-type: none;
+    
+    .footer__item {
+      font-family: variables.$header-font;
+      font-size: 1.2vw;
+      margin: 20px 30px 70px;
+
+      .footer__link {
+        text-decoration: none;
+        color: variables.$dark-font;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer .footer__list .footer__item {
+    font-size: 1.7vw;
+  }
+} 
+
+@media screen and (max-width: 425px) {
+  .footer .footer__list {
+    flex-direction: column;
+    padding-left: 0;
+
+    .footer__item {
+      display: flex;
+      font-size: 3.9vw;
+      margin: 15px auto 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .footer .footer__list {
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+}

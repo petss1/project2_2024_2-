@@ -1,0 +1,30 @@
+@use "./variables.scss";
+
+@mixin text-shadow($shadow) {
+    text-shadow: $shadow;
+}
+
+@mixin font-style($size, $weight) {
+    font-family: variables.$font-family;
+    font-optical-sizing: auto;
+    font-weight: $weight;
+    font-style: normal;
+    font-size: $size;
+}
+
+
+@mixin button-style($bg-color, $text-color) {
+    padding: 12px 20px;
+    font-size: 18px;
+    background-color: $bg-color;
+    color: $text-color;
+    font-family: variables.$font-family;
+    font-weight: variables.$font-weight;
+    font-style: normal;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    width: 80%;
+    transform: translateX(-50%);
+}
